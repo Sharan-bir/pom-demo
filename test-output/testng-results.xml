@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-31T15:46:50 IST" name="Default suite" finished-at="2026-03-31T15:47:24 IST" duration-ms="33850">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.demo.pom.runner.RunCucumberTest@600b9d27]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-03-31T15:46:50 IST" name="Default test" finished-at="2026-03-31T15:47:24 IST" duration-ms="33850">
+      <class name="com.demo.pom.runner.RunCucumberTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.demo.pom.runner.RunCucumberTest@600b9d27]" started-at="2026-03-31T15:46:50 IST" name="setUpClass" finished-at="2026-03-31T15:46:51 IST" duration-ms="723" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@515b9d4a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.demo.pom.runner.RunCucumberTest@600b9d27]" started-at="2026-03-31T15:46:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T15:47:02 IST" duration-ms="11193" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login using Excel rows"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login feature with Excel data"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Unable to read Excel test data]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Unable to read Excel test data
+at com.demo.pom.utils.ExcelReader.getRowData(ExcelReader.java:48)
+at com.demo.pom.steps.LoginSteps.user_logs_in_using_excel_row(LoginSteps.java:40)
+at ✽.user logs in using excel row 1(file:///C:/Users/sharanbir.x/eclipse-workspace/cucumber-pom-demo/src/test/resources/features/login.feature:5)
+Caused by: java.lang.RuntimeException: Sheet not found: Login
+at com.demo.pom.utils.ExcelReader.getRowData(ExcelReader.java:24)
+... 2 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.demo.pom.runner.RunCucumberTest@600b9d27]" started-at="2026-03-31T15:47:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T15:47:13 IST" duration-ms="10394" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login using Excel rows"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login feature with Excel data"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Unable to read Excel test data]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Unable to read Excel test data
+at com.demo.pom.utils.ExcelReader.getRowData(ExcelReader.java:48)
+at com.demo.pom.steps.LoginSteps.user_logs_in_using_excel_row(LoginSteps.java:40)
+at ✽.user logs in using excel row 2(file:///C:/Users/sharanbir.x/eclipse-workspace/cucumber-pom-demo/src/test/resources/features/login.feature:5)
+Caused by: java.lang.RuntimeException: Sheet not found: Login
+at com.demo.pom.utils.ExcelReader.getRowData(ExcelReader.java:24)
+... 2 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.demo.pom.runner.RunCucumberTest@600b9d27]" started-at="2026-03-31T15:47:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-31T15:47:24 IST" duration-ms="11337" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login using Excel rows"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login feature with Excel data"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Unable to read Excel test data]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Unable to read Excel test data
+at com.demo.pom.utils.ExcelReader.getRowData(ExcelReader.java:48)
+at com.demo.pom.steps.LoginSteps.user_logs_in_using_excel_row(LoginSteps.java:40)
+at ✽.user logs in using excel row 3(file:///C:/Users/sharanbir.x/eclipse-workspace/cucumber-pom-demo/src/test/resources/features/login.feature:5)
+Caused by: java.lang.RuntimeException: Sheet not found: Login
+at com.demo.pom.utils.ExcelReader.getRowData(ExcelReader.java:24)
+... 2 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.demo.pom.runner.RunCucumberTest@600b9d27]" started-at="2026-03-31T15:47:24 IST" name="tearDownClass" finished-at="2026-03-31T15:47:24 IST" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.demo.pom.runner.RunCucumberTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
