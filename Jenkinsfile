@@ -2,7 +2,7 @@ pipeline {
     agent any
  
     tools {
-        jdk 'JDK11'
+        jdk 'JDK17'
         maven 'Maven3'
     }
  
@@ -29,8 +29,7 @@ pipeline {
     post {
         always {
             junit testResults: 'target/surefire-reports/*.xml, target/cucumber-reports/*.xml',
-                  allowEmptyResults: true
- 
+                  allowEmptyResults: true 
             publishHTML(target: [
                 reportName: 'Cucumber HTML Report',
                 reportDir: 'target/cucumber-reports',
@@ -39,7 +38,6 @@ pipeline {
                 alwaysLinkToLastBuild: true,
                 allowMissing: true
             ])
- 
             publishHTML(target: [
                 reportName: 'Maven Surefire HTML Report',
                 reportDir: 'target/site',
@@ -48,7 +46,6 @@ pipeline {
                 alwaysLinkToLastBuild: true,
                 allowMissing: true
             ])
- 
             archiveArtifacts artifacts: 'target/**/*.html, target/**/*.json, target/**/*.xml',
                              fingerprint: true
         }
