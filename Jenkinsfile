@@ -28,7 +28,7 @@ pipeline {
  
     post {
         always {
-            junit testResults: 'target/surefire-reports/*.xml, target/cucumber-reports/*.xml',
+            testng testResults: 'target/surefire-reports/*.xml, target/cucumber-reports/*.xml',
                   allowEmptyResults: true 
             publishHTML(target: [
                 reportName: 'Cucumber HTML Report',
